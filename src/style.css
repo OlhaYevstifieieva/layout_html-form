@@ -1,10 +1,15 @@
-label:not(:last-child) {
+.label:not(:last-child) {
   display: block;
   margin-bottom: 10px;
 }
 
-fieldset:not(:last-child) {
+.fieldset:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.loveCatsNo {
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
 .visually-hidden {

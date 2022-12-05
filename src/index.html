@@ -16,9 +16,9 @@
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
     >
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Personal information</legend>
-        <label>Surname:
+        <label class="label">Surname:
           <input
             type="text"
             name="surname"
@@ -28,7 +28,7 @@
           >
         </label>
 
-        <label>Name:
+        <label class="label">Name:
           <input
             type="text"
             name="sname"
@@ -38,7 +38,7 @@
           >
         </label>
 
-        <label>How old are You?
+        <label class="label">How old are You?
           <input
             type="number"
             name="age"
@@ -49,7 +49,7 @@
           >
         </label>
 
-        <label>Full date of birth:
+        <label class="label">Full date of birth:
           <input
           type="date"
           name="birthDate"
@@ -57,7 +57,7 @@
           >
         </label>
 
-        <label>I accept the term of the  agreement
+        <label class="label">I accept the term of the  agreement
           <input
           type="checkbox"
           name="accept"
@@ -66,9 +66,9 @@
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Registration</legend>
-        <label>E-mail:
+        <label class="label">E-mail:
           <input
             type="email"
             name="mail"
@@ -78,7 +78,7 @@
           >
         </label>
 
-        <label>Password:
+        <label class="label">Password:
           <input
             type="password"
             name="password"
@@ -89,25 +89,26 @@
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
-        <label id="radioYes">
-          Do you lave cats?
-          <input
-            type="radio"
-            name="loveCats"
-            value="yes"
-          >
-          Yes
-          <input
-            type="radio"
-            name="loveCats"
-            value="no"
-          >
-          No
-        </label>
+        <span>Do you lave cats?</span>
+        <input
+          type="radio"
+          name="loveCats"
+          value="yes"
+          id="loveCatsYes"
+        >
+        <label for="loveCatsYes">Yes</label>
 
-        <label>What is your favorite color?
+        <input
+          type="radio"
+          name="loveCats"
+          value="no"
+          id="loveCatsNo"
+        >
+        <label for="loveCatsNo" class="loveCatsNo">No</label>
+
+        <label class="label">What is your favorite color?
           <input
             type="color"
             name="color"
@@ -115,7 +116,7 @@
           >
         </label>
 
-        <label>What time do you go to bed?
+        <label class="label">What time do you go to bed?
           <input
             type="time"
             name="timeBed"
@@ -124,12 +125,12 @@
           >
         </label>
 
-        <label>What are your favorite brand of cars?
+        <label class="label">What are your favorite brand of cars?
           <select
             id="favCar"
             name="favCar"
             required
-            multiple=""
+            multiple
           >
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
@@ -137,7 +138,7 @@
           </select>
         </label>
 
-        <label>How do you rate our work?
+        <label class="label">How do you rate our work?
           <input
             type="range"
             name="workRange"
@@ -150,13 +151,13 @@
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Additional info</legend>
-        <label>Comments:
+        <label class="label">Comments:
           <textarea name="comments" id="comments"></textarea>
         </label>
 
-        <label>Would you recommend us?
+        <label class="label">Would you recommend us?
           <select name="recommend">
             <option value="Yes">Yes</option>
             <option value="No">No</option>
